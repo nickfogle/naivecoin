@@ -13,7 +13,7 @@ rm -rfd logs
 mkdir logs
 rm -rfd data
 git pull
-#npm install
+npm install
 node bin/naivecoin.js -a 0.0.0.0 --peers http://54.85.162.52:3001 >> logs/naivecoin.logs &
 
 
@@ -25,7 +25,7 @@ do
     echo "------ POLLING ------" >> logs/naivecoin.logs
     scripts/poll_data.sh >> logs/naivecoin.logs &
 
-    if [[ $(( $counter % 2 )) == 0 ]];
+    if [[ $(( $counter % 3 )) == 0 ]];
         then
         echo "------ MINING ------"
         echo "------ MINING ------" >> logs/naivecoin.logs
@@ -36,10 +36,10 @@ do
         then
         echo "------ HEARTBEAT ------"
         echo "------ HEARTBEAT ------" >> logs/naivecoin.logs
-        node scripts/heartbeat.js \"$wallet_pw\" $wallet_id $wallet_address >> logs/naivecoin.logs &
+        node scripts/heartbeat.js "$wallet_pw" $wallet_id $wallet_address >> logs/naivecoin.logs &
     fi
 
-    sleep 5
+    sleep 10
 
     counter=$((counter+1))
 done
