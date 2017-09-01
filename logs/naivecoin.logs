@@ -1,0 +1,35 @@
+2017-09-01T18:13:57.700Z - [34minfo[39m - 1: Starting node 1
+2017-09-01T18:13:57.701Z - [34minfo[39m - 1: Blockchain empty, adding genesis block
+2017-09-01T18:13:57.704Z - [34minfo[39m - 1: Removing transactions that are in the blockchain
+2017-09-01T18:13:57.705Z - [34minfo[39m - 1: Sending http://0.0.0.0:3001 to peer http://54.85.162.52:3001/node/peers.
+2017-09-01T18:13:57.714Z - [34minfo[39m - 1: Peer http://54.85.162.52:3001 added to connections.
+2017-09-01T18:13:57.714Z - [34minfo[39m - 1: Getting latest block from: http://54.85.162.52:3001/blockchain/blocks/latest
+2017-09-01T18:13:57.717Z - [34minfo[39m - 1: Getting transactions from: http://54.85.162.52:3001/blockchain/transactions
+2017-09-01T18:13:57.717Z - [34minfo[39m - 1: Broadcasting
+2017-09-01T18:13:57.717Z - [34minfo[39m - 1: Sending http://54.85.162.52:3001 to peer http://54.85.162.52:3001/node/peers.
+2017-09-01T18:13:57.748Z - [34minfo[39m - 1: Listening http on port: 3001, to access the API documentation go to http://0.0.0.0:3001/api-docs/
+2017-09-01T18:13:57.923Z - [34minfo[39m - 1: Syncing transaction '2026dfb0eec8080e2478ee4cf565b7cf3621c27b3181ae2c401cd4032ccb8530'
+2017-09-01T18:13:57.994Z - [34minfo[39m - 1: Transaction added: 2026dfb0eec8080e2478ee4cf565b7cf3621c27b3181ae2c401cd4032ccb8530
+2017-09-01T18:13:57.994Z - [34minfo[39m - 1: Broadcasting
+2017-09-01T18:13:57.994Z - [34minfo[39m - 1: Sending transaction '2026dfb0eec8080e2478ee4cf565b7cf3621c27b3181ae2c401cd4032ccb8530' to: 'http://54.85.162.52:3001/blockchain/transactions'
+2017-09-01T18:13:57.998Z - [34minfo[39m - 1: Blockchain possibly behind. We got: 0, Peer got: 10
+2017-09-01T18:13:57.998Z - [34minfo[39m - 1: Querying chain from our peers
+2017-09-01T18:13:57.998Z - [34minfo[39m - 1: Broadcasting
+2017-09-01T18:13:57.998Z - [34minfo[39m - 1: Getting blocks from: http://54.85.162.52:3001/blockchain/blocks
+2017-09-01T18:13:58.161Z - [33mwarn[39m - 1: Unable to put transaction to http://54.85.162.52:3001/blockchain/transactions: Conflict
+2017-09-01T18:13:58.179Z - [34minfo[39m - 1: Blockchain possibly behind. We got: 0, Peer got: 10
+2017-09-01T18:13:58.179Z - [34minfo[39m - 1: Received blockchain is longer than current blockchain
+2017-09-01T18:13:58.240Z - [34minfo[39m - 1: Received blockchain is valid. Replacing current blockchain with received blockchain
+2017-09-01T18:13:58.243Z - [34minfo[39m - 1: Block added: 0f493034f9556d27936d70fdf7206f8d3f42a4c4e8f397125a7bdbc7e2ddd15d
+2017-09-01T18:13:58.244Z - [34minfo[39m - 1: Block added: 19f0d4802313e120bbfeb182422d4111afbb357c512427dd51e4d9eee4772829
+2017-09-01T18:13:58.245Z - [34minfo[39m - 1: Block added: 1d1b0e364649b1eb1617448910c37bbc82c3c3bf0c31f460af74bbbbfafd551a
+2017-09-01T18:13:58.245Z - [34minfo[39m - 1: Block added: 0025570cca06512da613abe6cb5ae4f779730be20f6dec616b6f646c3c150bd0
+2017-09-01T18:13:58.247Z - [34minfo[39m - 1: Block added: 007f3f296aa07c852feb2125c0d578d879fa1c84325586acfc01b8ad4def4a81
+2017-09-01T18:13:58.247Z - [34minfo[39m - 1: Block added: 0089f0cb2ff0eef95805951168913cb4e431a2b9d3eb53a90861fbb5aad2d282
+2017-09-01T18:13:58.249Z - [34minfo[39m - 1: Block added: 0080f3b96cd4a7f25c8bf6cf372b2177ad57fcf57436c6f0717a1c534f4836d9
+2017-09-01T18:13:58.250Z - [34minfo[39m - 1: Block added: 00468d3fb7f5dd5cb834efd80814bba1f16fcd763e7de3ed3fe3d876ee57776c
+2017-09-01T18:13:58.281Z - [34minfo[39m - 1: Block added: 001c31d147efc7dddd7db18bd6cf357283ecac54b8bda31e2fda68d4298c68f1
+2017-09-01T18:13:58.321Z - [34minfo[39m - 1: Block added: 0018a19e43e8f33a2fb757d1530dcf679e0f7450bce3c0323daf3083808b56f3
+2017-09-01T18:13:58.322Z - [34minfo[39m - 1: Broadcasting
+2017-09-01T18:13:58.322Z - [34minfo[39m - 1: Posting latest block to: http://54.85.162.52:3001/blockchain/blocks/latest
+2017-09-01T18:13:58.473Z - [33mwarn[39m - 1: Unable to post latest block to http://54.85.162.52:3001/blockchain/blocks/latest: Conflict
