@@ -5,8 +5,28 @@ mkdir logs
 rm -rfd data
 git pull
 npm install
-node bin/naivecoin.js -a 0.0.0.0 --peers http://54.85.162.52:3001 &> logs/naivecoin.logs
+node bin/naivecoin.js -a 0.0.0.0 --peers http://54.85.162.52:3001 & #> logs/naivecoin.logs
 
-watch -n 30 scripts/poll_data.sh
-watch -n 1800 node scripts/heartbeat.js
-watch -n 60 node scripts/mine.js
+sleep 10
+counter=0
+while true
+do
+	echo "polling"
+    scripts/poll_data.sh
+
+    if [[ $(( $counter % 2 )) == 0 ]];
+        then
+        echo "mining"
+        node scripts/mine.js
+    fi
+
+    if [[ $(( $counter % 10 )) == 0 ]];
+        then
+        echo "heartbeat"
+        node scripts/heartbeat.js
+    fi
+
+    sleep 5
+
+    counter=$((counter+1))
+done
