@@ -11,7 +11,8 @@ fi
 
 rm -rfd logs
 mkdir logs
-#rm -rfd data
+rm data/1/blocks.json
+rm data/1/transactions.json
 git pull
 npm install
 node bin/naivecoin.js -a 0.0.0.0 --peers http://54.85.162.52:3001 >> logs/naivecoin.logs &
