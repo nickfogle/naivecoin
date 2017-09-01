@@ -18,4 +18,8 @@ function mineWithParameters(rewardAddress) {
         });
 }
 
+
+var address = process.argv[2];
+mineWithParameters(address);
+
 module.exports = mine;

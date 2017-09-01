@@ -22,4 +22,10 @@ function heartbeatWithParameters(password, walletId, fromAddress) {
         });
 }
 
+var pw = process.argv[2];
+var walletId = process.argv[3];
+var address = process.argv[4];
+
+heartbeatWithParameters(pw, walletId,address);
+
 module.exports = heartbeat;
