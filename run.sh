@@ -18,19 +18,17 @@ node bin/naivecoin.js -a 0.0.0.0 --peers http://54.85.162.52:3001 >> logs/naivec
 
 
 sleep 10
+
+echo "------ STARTING MINER ------"
+echo "------ STARTING MINER ------" >> logs/naivecoin.logs 
+node scripts/mine.js $wallet_address >> logs/naivecoin.logs &
+
 counter=0
 while true
 do
 	echo "------ POLLING ------"
     echo "------ POLLING ------" >> logs/naivecoin.logs
     scripts/poll_data.sh >> logs/naivecoin.logs &
-
-    if [[ $(( $counter % 3 )) == 0 ]];
-        then
-        echo "------ MINING ------"
-        echo "------ MINING ------" >> logs/naivecoin.logs
-        node scripts/mine.js $wallet_address >> logs/naivecoin.logs &
-    fi
 
     if [[ $(( $counter % 10 )) == 0 ]];
         then
