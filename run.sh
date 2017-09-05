@@ -17,8 +17,9 @@ git pull
 npm install
 node bin/naivecoin.js -a 0.0.0.0 --peers http://54.85.162.52:3001 >> logs/naivecoin.logs &
 
+#node bin/naivecoin.js -a 0.0.0.0 >> logs/naivecoin.logs &
 
-sleep 10
+sleep 3
 
 echo "------ STARTING MINER ------"
 echo "------ STARTING MINER ------" >> logs/naivecoin.logs 
