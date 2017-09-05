@@ -13,7 +13,7 @@ function mineContinuouslyWithParameters(rewardAddress) {
         })
         .then(() => {
             console.log('------ MINING SUCCESSFUL ------')
-            return mineWithParameters(rewardAddress)
+            return mineContinuouslyWithParameters(rewardAddress)
         })
         .catch(e => {
             console.error(e);
