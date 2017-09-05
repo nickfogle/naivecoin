@@ -2,7 +2,7 @@ const request = require('superagent');
 
 function mine()
 {
-    mineWithParameters('4d9f711490af4580be23be122c62c0ae3ec2f838b087200bc2e0983c2248bd23')
+    mineContinuouslyWithParameters('4d9f711490af4580be23be122c62c0ae3ec2f838b087200bc2e0983c2248bd23')
 }
 
 function mineContinuouslyWithParameters(rewardAddress) {
@@ -17,7 +17,7 @@ function mineContinuouslyWithParameters(rewardAddress) {
         })
         .catch(e => {
             console.error(e);
-            return mineWithParameters(rewardAddress)
+            return mineContinuouslyWithParameters(rewardAddress)
         });
 }
 
