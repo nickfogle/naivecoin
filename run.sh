@@ -15,7 +15,7 @@ rm data/1/blocks.json
 rm data/1/transactions.json
 git pull
 npm install
-node bin/naivecoin.js -a 0.0.0.0 --peers http://54.85.162.52:3001 >> logs/naivecoin.logs &
+node bin/naivecoin.js -a 0.0.0.0 --peers http://54.89.193.17:3001 >> logs/naivecoin.logs &
 
 #node bin/naivecoin.js -a 0.0.0.0 >> logs/naivecoin.logs &
 
@@ -39,7 +39,7 @@ do
         node scripts/heartbeat.js "$wallet_pw" $wallet_id $wallet_address >> logs/naivecoin.logs &
     fi
 
-    sleep 10
+    sleep 60
 
     counter=$((counter+1))
 done
