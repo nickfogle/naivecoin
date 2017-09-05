@@ -9,7 +9,7 @@
     "superagent": "^3.6.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "pm2 start node_modules/react-scripts/scripts/start.js --name dashboard",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
