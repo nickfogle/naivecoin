@@ -585,6 +585,20 @@
                 }
             }
         },
+        "/node/peers/refresh": {
+            "get": {
+                "tags": [
+                    "node"
+                ],
+                "summary": "Refresh all data from node",
+                "description": "",
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
         "/node/peers": {
             "get": {
                 "tags": [
